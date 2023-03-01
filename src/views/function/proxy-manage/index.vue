@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <n-card title="代理数据表格" class="h-full shadow-sm rounded-16px">
-      <n-space :vertical="true">
-        <n-space> </n-space>
-        <loading-empty-wrapper class="h-480px" :loading="loading" :empty="empty">
-          <n-data-table :columns="columns" :data="dataSource" :flex-height="true" class="h-480px" />
-        </loading-empty-wrapper>
-      </n-space>
-    </n-card>
-  </div>
+  <n-card title="代理数据表格" class="h-full shadow-sm rounded-16px">
+    <n-space :vertical="true">
+      <n-space> </n-space>
+      <loading-empty-wrapper class="h-480px" :loading="loading" :empty="empty">
+        <n-data-table :columns="columns" :data="dataSource" :flex-height="true" class="h-480px" />
+      </loading-empty-wrapper>
+    </n-space>
+  </n-card>
 </template>
 
 <script setup lang="tsx">
